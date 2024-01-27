@@ -1,0 +1,165 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/bootstrap.scss";
+// endbower
+@import "_sasslightbox.scss";
+@import "_colors.scss";
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid $color-celeste;
+    margin: 1em 0;
+    padding: 0;
+}
+.centered {
+    text-align: center
+}
+.mt {
+    margin-top: 80px;
+}
+.mb {
+    margin-bottom: 80px;
+}
+/* ==========================================================================
+   General styles
+   ========================================================================== */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    // -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: $color-dark-gray;
+}
+.navbar-brand {
+    font-weight: 700;
+}
+.navbar-default .navbar-brand {
+    color: white;
+}
+.navbar-default {
+    background-color: rgba(0,0,0,0.5);
+    border-color: transparent;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    border-bottom: 2px solid black
+}
+.navbar-default .navbar-nav > li > a {
+    color: white;
+}
+/* ==========================================================================
+   Header and footer wraps
+   ========================================================================== */
+
+#headerwrap {
+    // This is an attempt at a dithered background
+    // background:
+    //   radial-gradient(ellipse at center 300px, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0) 100%),
+    //   url(../images/back.jpg) center top;
+    background: url(../images/back.jpg) center top;
+    margin-top: -70px;
+    padding-top: 250px;
+    text-align: center;
+    background-attachment: fixed;
+    background-position: center center;
+    min-height: 650px;
+    width: 100%;
+    background-size: 100%;
+    background-size: cover;
+}
+#headerwrap h1 {
+    color: $color-white;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    letter-spacing: 4px;
+    font-size: 5em;
+    font-weight: bold;
+    background-color: rgba(0,0,0,0.5);
+    /* WebKit (Safari/Chrome) Only */
+
+    -webkit-text-stroke: 1px black;
+    /* If we weren't using text-shadow, we'd set a fallback color
+     and use this to set color instead
+    -webkit-text-fill-color: white; */
+
+    text-shadow: 3px 3px 0 $color-black,
+    /* Simulated effect for Firefox and Opera
+       and nice enhancement for WebKit */
+
+    -1px -1px 0 $color-black, 1px -1px 0 $color-black, -1px 1px 0 $color-black, 1px 1px 0 $color-black;
+}
+#headerwrap h3 {
+    color: $color-white;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    letter-spacing: 3px;
+    background-color: rgba(0,0,0,0.5);
+    font-size: 1.5em;
+    -webkit-text-stroke: 1px black;
+    /* If we weren't using text-shadow, we'd set a fallback color
+     and use this to set color instead
+    -webkit-text-fill-color: white; */
+
+    text-shadow: 3px 3px 0 $color-black,
+    /* Simulated effect for Firefox and Opera
+       and nice enhancement for WebKit */
+
+    -1px -1px 0 $color-black, 1px -1px 0 $color-black, -1px 1px 0 $color-black, 1px 1px 0 $color-black;
+    font-weight: bold;
+    font-weight: 400;
+}
+#social {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: $color-off-white;
+}
+#social i {
+    font-size: 40px;
+    color: $color-dark-gray;
+}
+#social i:hover {
+    color: white
+}
+#footerwrap {
+    padding-top: 70px;
+    padding-bottom: 50px;
+    background-color: $color-off-black;
+}
+#footerwrap p {
+    color: $color-off-white;
+    margin-left: 10px;
+}
+
+#aboutwrap {
+    background: url(../images/about.jpg) center top;
+    margin-top: 0px;
+    padding-top: 250px;
+    text-align: center;
+    background-attachment: fixed;
+    background-position: top;
+    min-height: 800px;
+    width: 100%;
+    background-size: 100%;
+    background-size: cover;
+}
+/* Gallery */
+
+.gallery {
+    margin-top: 30px;
+}
+.gallery img:hover {
+    opacity: 0.4;
+}
+
+
+
